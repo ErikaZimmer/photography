@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyecto Final</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="centrado">
+		<span id="tituloWeb">Juana de Arco PH</span>	
+	</header>
+	<nav class="centrado">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">Sobre mi</a></li>
+			<li><a href="" id="menuPortfolio">Porfolio</a>
+				<ul id="submenuPortfolio">
+					<li><a href="portfolio.html#imgPortfolio3">Abstracto</a></li>
+					<li><a href="portfolio.html#imgPortfolio4">Natural</a></li>
+					<li><a href="portfolio.html#imgPortfolio6">Retratos</a></li>
+					<li><a href="portfolio.html#imgPortfolio7">Sociales</a></li>
+					<li><a href="portfolio.html">Ver todo</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<main>
+		<form action="/xxx.php" method="post" enctype="" target="_blank">
+			<label>Nombre:</label><input type="text" name="nombreContacto">
+			<label>Apellido:</label><input type="text" name="empresaContacto">
+			<label>Email:</label><input type="email" name="emailContacto">
+			<label>Motivo del contacto:</label>
+			<div class="seleccionarOpcion">
+				<input type="radio" name="mot_contacto" value="propEducativa"><label>Propuesta Educativa</label>
+				<input type="radio" name="mot_contacto" value="propLaboral"><label>Propuesta Laboral</label>
+				<input type="radio" name="mot_contacto" value="otro"><label>Otro</label>
+			</div>
+			<label>Mensaje:</label><textarea rows="5" cols="50"></textarea>
+			<div class="seleccionarOpcion">
+				<input type="checkbox" name="consentimiento">
+				<label>Estoy de acuerdo con enviar este mensaje.</label>
+			</div>
+			<div class="seleccionarOpcion centrado">
+				<input class="button" type="submit" name="enviarContacto" value="Enviar mensaje"> 
+				<input class="button"type="reset" name="borrarContacto" value="Borrar mensaje" onclick="alert('Ya podes escribir un nuevo mensaje!')" >
+			</div>
+		</form>
+	</main>
+	<footer class="centrado">
+		<p>Sitio desarrollado por La abejita Feliz</p>
+	</footer>
+</body>
+</html>
