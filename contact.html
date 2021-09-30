@@ -3,53 +3,102 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyecto Final</title>
+	<meta name="description" content="Linea directa para ponerse en contacto con Erika para saber de nuevos destinos y tips. ">
+	<meta name="keywords" content="Erika, Zimmer, Fotografia, viajes, paisajes, contacto">
+	<title>Erika Travel Photography Contact</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="centrado">
-		<span id="tituloWeb">Juana de Arco PH</span>	
+		<span id="tituloWeb">Erika PH</span>	
 	</header>
-	<nav class="centrado">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">Sobre mi</a></li>
-			<li><a href="" id="menuPortfolio">Porfolio</a>
-				<ul id="submenuPortfolio">
-					<li><a href="portfolio.html#imgPortfolio3">Abstracto</a></li>
-					<li><a href="portfolio.html#imgPortfolio4">Natural</a></li>
-					<li><a href="portfolio.html#imgPortfolio6">Retratos</a></li>
-					<li><a href="portfolio.html#imgPortfolio7">Sociales</a></li>
-					<li><a href="portfolio.html">Ver todo</a></li>
-				</ul>
-			</li>
-			<li><a href="contact.html">Contacto</a></li>
-		</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="about.html">Sobre mi</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="portfolio.html">Porfolio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="contact.html">Contacto</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<main>
-		<form action="/xxx.php" method="post" enctype="" target="_blank">
-			<label>Nombre:</label><input type="text" name="nombreContacto">
-			<label>Apellido:</label><input type="text" name="empresaContacto">
-			<label>Email:</label><input type="email" name="emailContacto">
-			<label>Motivo del contacto:</label>
-			<div class="seleccionarOpcion">
-				<input type="radio" name="mot_contacto" value="propEducativa"><label>Propuesta Educativa</label>
-				<input type="radio" name="mot_contacto" value="propLaboral"><label>Propuesta Laboral</label>
-				<input type="radio" name="mot_contacto" value="otro"><label>Otro</label>
+		<div class="container">
+			<div aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+			  </ol>
 			</div>
-			<label>Mensaje:</label><textarea rows="5" cols="50"></textarea>
-			<div class="seleccionarOpcion">
-				<input type="checkbox" name="consentimiento">
-				<label>Estoy de acuerdo con enviar este mensaje.</label>
+			<form class="row g-3" action="/xxx.php" method="post" enctype="" target="_blank">
+				<div class="col-md-6">
+				    <label for="InputName" class="form-label">Nombre</label>
+				    <input type="text" class="form-control" id="InputName" required>
+				</div>
+				<div class="col-md-6">
+				    <label for="InputCompany" class="form-label">Empresa</label>
+				    <input type="text" class="form-control" id="InputCompany">
+				</div>
+				<div class="col-12">
+				    <label for="InputEmail1" class="form-label">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+				    <div id="emailHelp" class="form-text">No vamos a compartir tu email con nadie.</div>
+				</div>
+				<div class="col-12">
+				  <label for="FormControlTextarea1" class="form-label">Mensaje</label>
+				  <textarea class="form-control" id="FormControlTextarea1" rows="3" required></textarea>
+				</div>
+				<div class="col-12">
+				  <label for="formFile" class="form-label">Adjunte su propuesta</label>
+				  <input class="form-control" type="file" id="formFile">
+				</div>
+				<div class="col-12 form-check">
+				    <input type="checkbox" class="form-check-input" id="Check1" required>
+				    <label class="form-check-label" for="Check1">Estoy de acuerdo con enviar este mensaje.</label>
+				</div>
+				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+					<button type="submit" class="btn btn-success" name="enviarContacto">Enviar</button>
+					<button  class="btn btn-info" name="borrarContacto" data-bs-toggle="modal" data-bs-target="#contactModal">Borrar mensaje</button>
+				</div>
+			</form>
+			<div class="modal" tabindex="-1" id="contactModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Cuidado!</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Vas a borrar todo el contenido de tu mensaje.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Dale gas</button>
+			        <button type="button" class="btn btn-primary">Cancelar</button>
+			      </div>
+			    </div>
+			  </div>
 			</div>
-			<div class="seleccionarOpcion centrado">
-				<input class="button" type="submit" name="enviarContacto" value="Enviar mensaje"> 
-				<input class="button"type="reset" name="borrarContacto" value="Borrar mensaje" onclick="alert('Ya podes escribir un nuevo mensaje!')" >
-			</div>
-		</form>
+		</div>
 	</main>
 	<footer class="centrado">
 		<p>Sitio desarrollado por La abejita Feliz</p>
 	</footer>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	
 </body>
 </html>

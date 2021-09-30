@@ -3,48 +3,100 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyecto Final</title>
+	<meta name="description" content="Descubriendo a la persona detras de la camara. Quien es Erika?">
+	<meta name="keywords" content="Erika, Zimmer, Fotografia, viajes, paisajes">
+	<title>Erika Travel Photography</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="centrado">
-		<span id="tituloWeb">Juana de Arco PH</span>	
+		<span id="tituloWeb">Erika PH</span>	
 	</header>
-	<nav class="centrado">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">Sobre mi</a></li>
-			<li><a href="" id="menuPortfolio">Porfolio</a>
-				<ul id="submenuPortfolio">
-					<li><a href="portfolio.html#imgPortfolio3">Abstracto</a></li>
-					<li><a href="portfolio.html#imgPortfolio4">Natural</a></li>
-					<li><a href="portfolio.html#imgPortfolio6">Retratos</a></li>
-					<li><a href="portfolio.html#imgPortfolio7">Sociales</a></li>
-					<li><a href="portfolio.html">Ver todo</a></li>
-				</ul>
-			</li>
-			<li><a href="contact.html">Contacto</a></li>
-		</ul>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="about.html">Sobre mi</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="portfolio.html">Porfolio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="contact.html">Contacto</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
 	</nav>
 	<main id="sectionAbout">
-		<div id="imgAbout">
-			<img src="https://external-preview.redd.it/9uy6J4gyu1FY1AWEjHEsDSf6xWJZnpTtdyvoGhYcBF4.jpg?auto=webp&s=ba33c85aa61f5ca59e3fc6a0db45cf48f5a4501f" alt="myImg" id="myImgAbout">
-		</div>
-		<div id="presentaAbout">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p class="titulo">Datos cuiriosos sobre mi:</p>
-			<div><span class="preguntaRandom">Mi fecha de cumpleaños:</span><span class="datoRandom"> 28/5</span></div>
-			<div><span class="preguntaRandom">Mi signo del zodiaco:</span><span class="datoRandom"> Geminis</span></div>
-			<div><span class="preguntaRandom">Mi canción favorita:</span><span class="datoRandom"> Somewhere Only we know. Si queres escucharla acá lo vas a poder hacer:</span></div>
-			<iframe src="https://open.spotify.com/embed/track/1SKPmfSYaPsETbRHaiA18G" width="50%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<div><span class="preguntaRandom">Mi pelicula preferida:</span><span class="datoRandom"> Orgullo y prejuicio. La podes ver desde <a href="https://www.youtube.com/watch?v=BxzFU1NZEdY" target="_blank">acá</a></span>
+		<div class="container">
+			<div aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item active" aria-current="page">Sobre mi</li>
+			  </ol>
 			</div>
-			<!--div><span class="preguntaRandom"></span><span class="datoRandom"></span></div-->
+			<div class="mb-3 centrado" id="imgAbout">
+				<img src="https://external-preview.redd.it/9uy6J4gyu1FY1AWEjHEsDSf6xWJZnpTtdyvoGhYcBF4.jpg?auto=webp&s=ba33c85aa61f5ca59e3fc6a0db45cf48f5a4501f" alt="myImg" id="myImgAbout">
+			</div>
+
+			<div id="accordion">
+
+			  <div class="card">
+			    <div class="card-header">
+			      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+			        Mi bio
+			      </a>
+			    </div>
+			    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+			      <div class="card-body">
+			        Lorem ipsum..
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <div class="card-header">
+			      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+			        Estudios
+			      </a>
+			    </div>
+			    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+			      <div class="card-body">
+			        Lorem ipsum..
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="card">
+			    <div class="card-header">
+			      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+			        Experiencia
+			      </a>
+			    </div>
+			    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+			      <div class="card-body">
+			        Lorem ipsum..
+			      </div>
+			    </div>
+			  </div>
+
+			</div>
 		</div>
 	</main>
 	<footer class="centrado">
 		<p>Sitio desarrollado por La abejita Feliz</p>
 	</footer>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	
 </body>
 </html>

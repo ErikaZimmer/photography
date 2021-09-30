@@ -1,22 +1,11 @@
 /* --- TIPOGRAFIAS --- */
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
 
-/* --- VARIABLES --- */
-
-:root{
-  --colorPrincipal: #31757beb;
-  --colorSecundario:#143e77;
-  --colorNeutroPrincipal: white;
-  --colorNeutroPrincipalTransparency: #ffffffcc;
-  --colorNeutroSecundario:  black;
-  --colorNeutroSecundarioTransparency:#cececeb5;
-
-
-  --fontFamilyPrincipal: 'Calibri', cursive;
-}
 
 /* --- GENERAL --- */
 body{ width: 100%; margin: 0px;}
+
+main{border-bottom: 2px solid #000;}
 
 p{margin: 0px;}
 
@@ -24,42 +13,69 @@ p{margin: 0px;}
 
 /*TITULO*/
 #tituloWeb{
-	font-family: var(--fontFamilyPrincipal);
+	font-family: 'Calibri', cursive;
 	font-size: 64px;
 }
 
 /*MENU*/
-.navbar-light:hover .navbar-nav:hover  .nav-link:hover  {
-    color: var(--colorNeutroPrincipal);
-    background-color: var(--colorNeutroSecundario);
+nav{
+	display: inline;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-	background-color: var(--colorNeutroPrincipalTransparency)!important;
-    position: sticky;
+.container-fluid{
+	background-color: #ffffffcc;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Calibri', cursive;
+}
+ul{
+	list-style-type: none;
+	position: sticky;
     top: 0px;
-    z-index: 100;
+    background-color: white;
+    padding: 15px 0px;
+	z-index: 999;
+}
+
+li{
+	padding: 0px 10px;
+	text-decoration: none;
+	display: inline;
+}
+
+.navbar-light:hover .navbar-nav:hover  .nav-link:hover  {
+    color: white;
+    background-color: black;
 }
 
 /*PIE DE PAGINA*/
 
 footer{
-	color: var(--colorNeutroPrincipal);
-	background-color: var(--colorNeutroSecundario);
-	margin: 50px 0px 0px 0px;
+	color: white;
+	background-color: #000;
+	margin: 0px;
 	padding: 25px;
 }
 
 
 /* --- HOME --- */
 #presentaHome{
-	background-color: var(--colorNeutroSecundarioTransparency);
+	background-color: #cececeb5;
 	position: relative;
 	transition: background-color 3s;
 }
 
 #seccionImg:hover ~ #presentaHome{
-	background-color: var(--colorPrincipal);
+	background-color: #31757beb;
 }
 
 #seccionImg{
@@ -70,12 +86,13 @@ footer{
 	overflow: hidden;
 }
 
+
 #seccionImg:hover{filter: grayscale(0);}
 
 #fraseHome{
 	font-family: 'Gochi Hand', cursive;
 	font-size: 22px;
-	color: var(--colorNeutroPrincipal);
+	color: white;
 	z-index: 1;
 	padding: 20px 5px 10px 5px;
 }
@@ -88,6 +105,15 @@ footer{
 
 
 /* --- ABOUT --- */ 
+
+div#imgAbout {
+    text-align: center;
+}
+
+div#accordion {
+    margin-bottom: 50px;
+}
+
 
 /* --- PORTFOLIO ---- */
 
@@ -102,41 +128,27 @@ footer{
     grid-auto-flow: column;
 }
 
-.imgPortfolio{
-	opacity: 0.9;
-	filter: grayscale(100%);
-	transition: filter opacity 5s;
-}
-
-.imgPortfolio:hover{
-	opacity: 1;
-	filter: drop-shadow(2px 4px 6px gray);
-}
 
 /* --- CONTACTO --- */
 
 label{
-	color: var(--colorPrincipal); 
+	color: #31757beb; 
 	font-weight: 700;
 	padding: 20px 0px;
 }
 textarea{resize:none;}
 
 .btn-success {
-    color: var(--colorNeutroPrincipal);
-    background-color: var(--colorPrincipal);
-    border-color: var(--colorPrincipal);
+    color: #fff;
+    background-color: #31757bb5;
+    border-color: #31757beb;
 }
 
 .btn-info {
-    color: var(--colorNeutroPrincipal);
-    background-color: var(--colorSecundario);
-    border-color: var(--colorSecundario);
+    color: #fff;
+    background-color: #143e77;
+    border-color: #143e77;
 }
-
-
-
-
 
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
 
@@ -149,7 +161,7 @@ textarea{resize:none;}
 
 	/* --- HOME --- */
 	#presentaHome {
-	    background-color: var(--colorPrincipal);
+	    background-color: #31757bb8;
 	    margin: -100px 25px 10px 25px;
 	    position: relative;
 	}
@@ -177,7 +189,7 @@ textarea{resize:none;}
 
 	/* --- PORTFOLIO --- */
 
-
+	#contentPortfolio{display: inline;}
 
 	.imgPortfolio { 
 	    max-width: 90vw;
@@ -265,15 +277,6 @@ textarea{resize:none;}
 		min-height: 75vh;
 		margin-top: 2vh;
 	}
-
-	/* Menu */
-
-	.navbar-expand-lg .navbar-collapse {
-	    display: flex!important;
-	    flex-basis: auto;
-	    justify-content: center;
-	}
-
 
 	/* --- HOME --- */
 
