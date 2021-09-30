@@ -91,7 +91,7 @@ footer{
 
 /* --- PORTFOLIO ---- */
 
-#contentPortfolio{
+.contentBlock{
 	display: grid;
 	column-gap: 10px;
 	row-gap: 5px;
@@ -141,7 +141,7 @@ textarea{resize:none;}
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width:425px) {
 
 	/* --- GENERAL --- */
 	header{margin-top: 3vh;}
@@ -177,7 +177,9 @@ textarea{resize:none;}
 
 	/* --- PORTFOLIO --- */
 
-
+	.contentBlock{
+		display: block;
+	}
 
 	.imgPortfolio { 
 	    max-width: 90vw;
@@ -234,7 +236,7 @@ textarea{resize:none;}
 
 	/* --- PORTFOLIO --- */
 
-	#contentPortfolio{
+	.contentBlock{
 		grid-template-columns: 45vw 45vw;
 		grid-template-rows: auto;
 	}
@@ -298,7 +300,7 @@ textarea{resize:none;}
 
 	/* --- PORTFOLIO --- */
 
-	#contentPortfolio{
+	.contentBlock{
 		grid-template-columns: 25vw 25vw 25vw;
 		grid-template-rows: auto;
 	}
