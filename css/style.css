@@ -50,6 +50,9 @@ footer{
 	padding: 25px;
 }
 
+.social-media{text-align: center; padding-bottom:5px;}
+.social-media-icon{width: 18px; height: 18px;}
+.footText{font-size: 12px; text-transform: uppercase; text-align: center; text-justify:inter-word;} 
 
 /* --- HOME --- */
 #presentaHome{
@@ -88,6 +91,11 @@ footer{
 
 
 /* --- ABOUT --- */ 
+
+.imageClass{
+	width: 100%;
+    opacity: 0.85;
+}
 
 /* --- PORTFOLIO ---- */
 
