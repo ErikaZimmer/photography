@@ -1,0 +1,34 @@
+#presentaHome {
+  background-color: #cececeb5;
+  position: relative;
+  transition: background-color 3s; }
+
+#seccionImg:hover ~ #presentaHome {
+  background-color: #31757beb; }
+
+#seccionImg {
+  display: block;
+  margin: 0px 6vw;
+  filter: grayscale(1);
+  transition: filter 2s;
+  overflow: hidden; }
+
+#seccionImg:hover {
+  filter: grayscale(0); }
+
+.text-cita, .text-cita_big {
+  font-family: "Gochi Hand", cursive;
+  color: "Gochi Hand", cursive;
+  z-index: 1; }
+
+.text-cita_big {
+  font-size: 22px;
+  padding: 20px 5px 10px 5px; }
+
+.text-author, .text-author_big {
+  font-family: "Homemade Apple", cursive;
+  z-index: 2; }
+
+.text-author_big {
+  font-size: 22px;
+  padding: 15px 0px 10px 0px; }
