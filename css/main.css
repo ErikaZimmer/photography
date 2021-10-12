@@ -1,3 +1,12 @@
+.centrado {
+  text-align: center; }
+
+.tituloWeb, .tituloWeb_big {
+  font-family: "Calibri", cursive; }
+
+.tituloWeb_big {
+  font-size: 64px; }
+
 #presentaHome {
   background-color: #cececeb5;
   position: relative;
