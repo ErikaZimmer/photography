@@ -1,38 +1,172 @@
+/* --- TIPOGRAFIAS --- */
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap");
+/* --- VARIABLES --- */
+body {
+  width: 100%;
+  margin: 0px; }
+
+p {
+  margin: 0px; }
+
+label {
+  color: #022e60;
+  font-weight: 700; }
+
 .centrado {
   text-align: center; }
 
+.justificado {
+  text-align: justify; }
+
+.relative-position {
+  position: relative; }
+
+.shadow {
+  box-shadow: 10px 10px 20px 0px rgba(224, 224, 224, 0.77);
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(224, 224, 224, 0.77);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(224, 224, 224, 0.77); }
+
+.section-division {
+  color: #54b4bf;
+  border: solid; }
+
+/*Textos*/
 .tituloWeb, .tituloWeb_big {
   font-family: "Calibri", cursive; }
 
 .tituloWeb_big {
   font-size: 64px; }
 
-#presentaHome {
-  background-color: #cececeb5;
-  position: relative;
-  transition: background-color 3s; }
+/*Imagenes*/
+.image-class, .image-class_opacity-up {
+  width: 100%; }
 
-#seccionImg:hover ~ #presentaHome {
-  background-color: #31757beb; }
+.image-class_opacity-up {
+  opacity: 0.85; }
 
-#seccionImg {
+/*Botones*/
+.btn {
+  border-radius: 0px; }
+
+.btn-principal {
+  color: white;
+  background-color: #022e60;
+  border-color: #022e60; }
+
+.btn-principal:hover {
+  color: white;
+  background-color: #4D72A5;
+  border-color: #4D72A5; }
+
+.btn-secundario {
+  color: white;
+  background-color: #FFDE66;
+  border-color: #FFDE66; }
+
+.btn-secundario:hover {
+  background-color: #FFF0AD;
+  border-color: #FFF0AD; }
+
+/*MENU*/
+/*SE PUEDE OPTIMIZAR*/
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: white;
+  background-color: black; }
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #ffffffcc !important;
+  /*PASAR A MEDIA DE PANTALLAS GRANDES*/
+  position: sticky;
+  top: 0px;
+  z-index: 100; }
+
+/*PIE DE PAGINA*/
+.footer-section {
+  color: white;
+  background-color: black;
+  margin: 50px 0px 0px 0px;
+  padding: 25px; }
+
+.social-media {
+  text-align: center;
+  padding-bottom: 5px; }
+
+.social-media-icon {
+  width: 18px;
+  height: 18px; }
+
+.footText {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  text-justify: inter-word; }
+
+/*PAGINAS DE CONTENIDO*/
+.contentBox {
+  width: calc(75vw + 24px);
+  margin: auto; }
+
+/*DIRECCION DE PAGINA*/
+.pageHeader {
+  height: 300px;
+  margin: auto auto 12px auto;
+  font-size: 30px;
+  text-align: center;
+  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.jpg?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: 0px 0px; }
+
+.breadcrumb {
+  background-color: #ffffff99;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+  list-style: none;
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 100%; }
+
+.bottom-left-margin {
+  margin: 0px 0px 20px 20px; }
+
+.principal-section {
   display: block;
   margin: 0px 6vw;
-  filter: grayscale(1);
-  transition: filter 2s;
   overflow: hidden; }
 
-#seccionImg:hover {
+/* --- ANIMACIONES --- */
+.text-grayscale {
+  background-color: #cececeb5;
+  transition: background-color 3s; }
+
+.principal-section:hover ~ .text-grayscale {
+  color: white;
+  background-color: #022e60; }
+
+.img-grayscale, .img-grayscale_transform {
+  filter: grayscale(1); }
+
+.img-grayscale_transform {
+  transition: filter 2s; }
+
+.img-grayscale_transform:hover {
   filter: grayscale(0); }
 
-.text-cita, .text-cita_big {
+/* --- HOME --- */
+.text-cita, .text-cita_big, .text-cita_hiper {
   font-family: "Gochi Hand", cursive;
-  color: "Gochi Hand", cursive;
   z-index: 1; }
 
 .text-cita_big {
   font-size: 22px;
   padding: 20px 5px 10px 5px; }
+
+.text-cita_hiper {
+  font-size: 34px; }
 
 .text-author, .text-author_big {
   font-family: "Homemade Apple", cursive;
@@ -41,3 +175,183 @@
 .text-author_big {
   font-size: 22px;
   padding: 15px 0px 10px 0px; }
+
+/* --- PORTFOLIO ---- */
+.content-image-grid {
+  display: grid;
+  grid-template-rows: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: auto;
+  grid-gap: 12px; }
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 3; }
+
+.div2 {
+  grid-column: 3;
+  grid-row: 1/2; }
+
+.div3 {
+  grid-area: 2 / 3 / 3 / 3; }
+
+.div4 {
+  grid-column: 2/4;
+  grid-row: 4/6; }
+
+.div5 {
+  grid-column: 1/1;
+  grid-row: 4/4; }
+
+.div6 {
+  grid-column: 1;
+  grid-row: 5/6; }
+
+.div7 {
+  grid-area: 3 / 2 / 3 / 1; }
+
+.div8 {
+  grid-area: 3 / 2 / 3 / 3; }
+
+.div9 {
+  grid-area: 3 / 3 / 3 / 3; }
+
+.modal-header {
+  flex-direction: column;
+  border-bottom: 1px solid #92E3E8; }
+
+.modal-footer {
+  border-top: 1px solid #92E3E8; }
+
+/* --- CONTACTO --- */
+.resize-none {
+  resize: none; }
+
+.form-control {
+  border: 2px solid #54b4bf; }
+
+/*---------------------------------------------------------------------------------*/
+/* --- ADAPTACION A OTRAS PANTALLAS --- */
+@media only screen and (max-width: 425px) {
+  /* --- GENERAL --- */
+  header {
+    margin-top: 3vh; }
+  main {
+    max-height: auto; }
+  /* --- PAGINAS DE CONTENIDO --- */
+  .pageHeader {
+    background-position: -200px 0px; }
+  /* --- HOME --- */
+  .presentacion-section {
+    margin: -35px 25px 10px 25px; }
+  .principal-section {
+    margin: 0px 0px; }
+  .image-principal {
+    width: 200vw;
+    position: relative;
+    left: -50vw; }
+  /* --- ABOUT --- */
+  .image-aside {
+    text-align: center;
+    width: 100vw; }
+  /* --- PORTFOLIO --- */
+  .contentBlock {
+    display: block; }
+  .imgPortfolio {
+    max-width: 90vw;
+    margin: 5px; }
+  /* --- CONTACTO --- */
+  .form-section {
+    display: grid;
+    margin: 20px 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch; } }
+
+/*---------------------------------------------------------------------------------*/
+@media only screen and (min-width: 426px) and (max-width: 1023px) {
+  /* --- GENERAL --- */
+  header {
+    margin-top: 3vh; }
+  main {
+    min-height: 50vh;
+    margin-top: 2vh; }
+  /* --- PAGINAS DE CONTENIDO --- */
+  .pageHeader {
+    background-position: -145px 0px; }
+  /* --- HOME --- */
+  .presentacion-section {
+    margin: -50px 10vh 10vh 10vh; }
+  .principal-section {
+    margin: 0px 0px; }
+  .image-principal {
+    width: 100vw; }
+  /* --- ABOUT --- */
+  /* --- PORTFOLIO --- */
+  .contentBlock {
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: auto; }
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2; }
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3; }
+  .div3 {
+    grid-area: 2 / 1 / 2 / 3; }
+  .div4 {
+    grid-area: 4 / 1 / 4 / 3; }
+  .div9 {
+    grid-area: 5 / 1 / 5 / 3; }
+  .div5, .div6, .div7, .div8 {
+    display: none; } }
+
+/*---------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) {
+  /* --- GENERAL --- */
+  header {
+    margin-top: 5vh; }
+  main {
+    min-height: 75vh;
+    margin-top: 2vh; }
+  /* Menu */
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center; }
+  /* --- HOME --- */
+  .presentacion-section {
+    margin: -80px 20vh 10vh 20vh; }
+  .image-principal {
+    width: 85vw; }
+  /* --- ABOUT --- */
+  /* --- PORTFOLIO ---- */
+  .content-image-grid {
+    grid-template-columns: 25vw 25vw 25vw; }
+  .div1 {
+    grid-area: 1 / 1 / 3 / 3; }
+  .div2 {
+    grid-column: 3;
+    grid-row: 1/2; }
+  .div3 {
+    grid-area: 2 / 3 / 3 / 3; }
+  .div4 {
+    grid-column: 2/4;
+    grid-row: 4/6; }
+  .div5 {
+    grid-column: 1/1;
+    grid-row: 4/4; }
+  .div6 {
+    grid-column: 1;
+    grid-row: 5/6; }
+  .div7 {
+    grid-area: 3 / 2 / 3 / 1; }
+  .div8 {
+    grid-area: 3 / 2 / 3 / 3; }
+  .div9 {
+    grid-area: 3 / 3 / 3 / 3; }
+  /*CONTACTO*/
+  .form-section {
+    display: grid;
+    padding: 3vh; } }

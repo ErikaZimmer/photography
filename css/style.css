@@ -1,0 +1,189 @@
+/* --- TIPOGRAFIAS --- */
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
+
+/* --- ABOUT --- */ 
+
+
+/* --- PORTFOLIO ---- */
+label{
+  color: $colorPrincipal; 
+  font-weight: 700;
+  padding: 20px 0px;
+}
+
+
+
+
+/* --- ADAPTACION A OTRAS PANTALLAS --- */
+
+
+@media only screen and (max-width:425px) {
+
+	/* --- GENERAL --- */
+	header{margin-top: 3vh;}
+	main{max-height: auto;}
+
+	/* --- HOME --- */
+	#presentaHome {
+	    background-color: var(--colorPrincipal);
+	    margin: -100px 25px 10px 25px;
+	    position: relative;
+	}
+	#seccionImg{margin: 0px 0px;}
+	div#seccionImg > img{
+	    width: 200vw;
+	    position: relative;
+	    left: -50vw;
+	}
+
+	/* --- ABOUT --- */
+	#sectionAbout {
+	    display: block;
+	    text-align: justify;
+	}
+	#imgAbout {
+	    text-align: center;
+	    width: 100vw;
+	}
+	#myImgAbout {
+	    text-align: center;
+	    width: 100vw;
+	}
+	#presentaAbout {margin: 20px;}
+
+	/* --- PORTFOLIO --- */
+
+	.contentBlock{
+		display: block;
+	}
+
+	.imgPortfolio { 
+	    max-width: 90vw;
+	    margin: 5px;
+	}
+
+	/* --- CONTACTO --- */
+
+	form {
+	    display: grid;
+	    margin: 20px 30px;
+	    align-content: center;
+	    justify-content: center;
+	    align-items: center;
+	    justify-items: stretch;
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 1023px){
+
+	/* --- GENERAL --- */
+
+	header{margin-top: 5vh;}
+
+	main{
+		min-height: 70vh;
+		margin-top: 5vh;
+	}
+
+	/* --- HOME --- */
+
+	#presentaHome {
+    	margin: -50px 10vh 10vh 10vh;
+	}
+	
+	#seccionImg {margin: 0px 0px;}
+
+	div#seccionImg > img{width: 100vw;}
+
+	/* --- ABOUT --- */
+
+	#sectionAbout {
+	    display: flex;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    flex-direction: row;
+	    align-content: center;
+	    align-items: center;
+	}
+
+	img#myImgAbout {
+	    max-width: 40vw;
+	}
+
+	/* --- PORTFOLIO --- */
+
+	.contentBlock{
+		grid-template-columns: 45vw 45vw;
+		grid-template-rows: auto;
+	}
+
+	.div1 { grid-area: 1 / 1 / 2 / 2; }
+	.div2 { grid-area: 1 / 2 / 2 / 3; }
+	.div3 { display: none;}
+	.div4 { display: none;}
+	.div5 { grid-area: 2 / 1 / 2 / 3; }
+	.div6 { grid-area: 4 / 1 / 4 / 3; }
+	.div7 { grid-area: 5 / 1 / 5 / 3; }
+
+	.imgPortfolio{
+		width: 100%;
+		margin: 2px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	/* --- GENERAL --- */
+
+	header{margin-top: 5vh;}
+
+	main{
+		min-height: 75vh;
+		margin-top: 2vh;
+	}
+
+	/* Menu */
+
+	.navbar-expand-lg .navbar-collapse {
+	    display: flex!important;
+	    flex-basis: auto;
+	    justify-content: center;
+	}
+
+
+	/* --- HOME --- */
+
+	#presentaHome {margin: -80px 20vh 10vh 20vh;}
+
+	div#seccionImg > img{width: 85vw;}
+
+	/* --- ABOUT --- */
+
+	#sectionAbout {
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: flex-start;
+	    align-content: center;
+	}
+
+	img#myImgAbout {
+	    max-width: 25vw;
+	}
+
+
+
+	/*CONTACTO*/
+
+	form {
+	    display: grid;
+	    margin: 3vh 25vh;
+	    padding: 3vh;
+	}
+
+}
+	
+
