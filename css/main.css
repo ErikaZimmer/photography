@@ -93,6 +93,9 @@
     display: flex !important;
     flex-basis: auto;
     justify-content: center; }
+  /* --- PAGINAS DE CONTENIDO ---*/
+  .pageHeader {
+    background-position: 0px 0px; }
   /* --- HOME --- */
   .presentacion-section {
     margin: -80px 20vh 10vh 20vh; }
@@ -177,7 +180,7 @@ label {
   max-width: 1000px; }
 
 .image-class_hiper {
-  max-width: 1500px; }
+  max-width: 2000px; }
 
 .image-class_opacity-up {
   opacity: 0.85; }
@@ -251,8 +254,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: 0px 0px; }
+  background-origin: content-box; }
 
 .breadcrumb {
   background: rgba(0, 0, 0, 0.36);
