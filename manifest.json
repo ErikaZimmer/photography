@@ -1,0 +1,18 @@
+{
+  "short_name": "Erika PH",
+  "name": "Erika Zimmer: Fotografia y viajes.",
+  "start_url": "https://erikazimmer.github.io/photographyPage/",
+  "background_color": "#022e60",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#022e60",
+  "description": "Encontrar lo siemple en lo complejo y lo visible en lo insible es la magia de la fotografia. Como vemos el mundo, como deseamos verlo y como realmente es son distintas dimenciones que atraviesan a una persona cada dia de su vida. Erika viaja para descubrirlo.",
+  "screenshots": [
+    {
+      "src": "/img/screenshot_1.jpg",
+      "type": "image/jpg",
+      "sizes": "426x767"
+    },
+
+  ]
+}
