@@ -206,14 +206,12 @@ label {
   border-color: #FFF0AD; }
 
 /*MENU*/
-/*SE PUEDE OPTIMIZAR*/
 .navbar-light:hover .navbar-nav:hover .nav-link:hover {
   color: white;
   background-color: black; }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   background-color: #ffffffcc !important;
-  /*PASAR A MEDIA DE PANTALLAS GRANDES*/
   position: sticky;
   top: 0px;
   z-index: 100; }
@@ -250,7 +248,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   margin: auto auto 12px auto;
   font-size: 30px;
   text-align: center;
-  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.jpg?raw=true);
+  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;

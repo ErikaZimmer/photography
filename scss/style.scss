@@ -97,14 +97,14 @@ label{
   border-color: $colorSecundarioHover;
 }
 
-/*MENU*/                                                        /*SE PUEDE OPTIMIZAR*/
+/*MENU*/                                                      
 .navbar-light:hover .navbar-nav:hover  .nav-link:hover  {
   color: $colorNeutroPrincipal;
   background-color: $colorNeutroSecundario;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: $colorNeutroPrincipalTransparency!important;        /*PASAR A MEDIA DE PANTALLAS GRANDES*/
+  background-color: $colorNeutroPrincipalTransparency!important;      
   position: sticky;
   top: 0px;
   z-index: 100;
@@ -136,7 +136,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   margin: auto auto 12px auto;
   font-size: 30px;
   text-align: center;
-  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.jpg?raw=true);
+  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: content-box;
