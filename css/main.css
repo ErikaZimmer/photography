@@ -7,9 +7,7 @@
 @media only screen and (max-width: 426px) {
   /* --- GENERAL --- */
   header {
-    margin-top: 3vh; }
-  main {
-    max-height: auto; }
+    padding-top: 3vh; }
   .h3, h3 {
     font-size: calc(0.8rem + .6vw); }
   /* --- PAGINAS DE CONTENIDO --- */
@@ -47,9 +45,8 @@
 @media only screen and (min-width: 427px) and (max-width: 1023px) {
   /* --- GENERAL --- */
   header {
-    margin-top: 3vh; }
+    padding-top: 3vh; }
   main {
-    min-height: 50vh;
     margin-top: 2vh; }
   .h3, h3 {
     font-size: calc(0.9rem + .6vw); }
@@ -86,9 +83,8 @@
 @media only screen and (min-width: 1024px) {
   /* --- GENERAL --- */
   header {
-    margin-top: 5vh; }
+    padding-top: 5vh; }
   main {
-    min-height: 75vh;
     margin-top: 2vh; }
   .h3, h3 {
     font-size: 1.25rem; }
@@ -135,6 +131,7 @@
 
 body {
   width: 100%;
+  min-height: 100vh;
   margin: 0px; }
 
 p {

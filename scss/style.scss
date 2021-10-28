@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
 
 /* --- IMPORT --- */ 
-@import "variables.scss";
-@import "media-max-426px.scss";
-@import "media-min-427px.scss";
-@import "media-min-1024px.scss";
+@import "__variables.scss";
+@import "__media-max-426px.scss";
+@import "__media-min-427px.scss";
+@import "__media-min-1024px.scss";
 
 
 
-body{ width: 100%; margin: 0px;}
+body{ 
+  width: 100%; 
+  min-height: 100vh;
+  margin: 0px;
+}
 
 p{margin: 0px;}
 label{
