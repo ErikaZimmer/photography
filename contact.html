@@ -48,8 +48,7 @@
 			    <li class="breadcrumb-item active bottom-left-margin" aria-current="page">Contacto</li>
 			  </ol>
 			</div>
-			<form class="form-section row g-3" action="/xxx.php" method="post" enctype="" target="_blank">
-				
+			<form class="form-section row g-3" method="post" enctype="" target="_blank">
 				<div class="col-12">
 				    <label for="InputName" class="form-label">Nombre</label>
 				    <input type="text" class="form-control" id="InputName" required>
@@ -77,7 +76,7 @@
 				</div>
 				<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 					<button class="btn btn-secundario shadow" name="borrarContacto" data-bs-toggle="modal" data-bs-target="#contactModal">Borrar mensaje</button>
-					<button class="btn btn-principal shadow" name="enviarContacto" type="submit" >Enviar</button>
+					<button class="btn btn-principal shadow" name="enviarContacto" type="submit" data-bs-toggle="modal" data-bs-target="#enviadoModal">Enviar</button>
 				</div>
 			</form>
 			<div class="modal" tabindex="-1" id="contactModal">
@@ -93,6 +92,22 @@
 			      <div class="modal-footer">
 			        <button type="reset" class="btn btn-secundario" data-bs-dismiss="modal">Dale gas</button>
 			        <button type="button" class="btn btn-principal" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal" tabindex="-1" id="enviadoModal">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Listo!</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Gracias por tu mensaje! En breve nos vamos a poner en contacto con vos.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-principal" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
 			      </div>
 			    </div>
 			  </div>
