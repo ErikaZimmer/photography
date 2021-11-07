@@ -11,28 +11,22 @@
   .h3, h3 {
     font-size: calc(0.8rem + .6vw); }
   /* --- PAGINAS DE CONTENIDO --- */
-  .pageHeader {
+  .contentBox .pageHeader {
     background-position: -200px 0px; }
   /* --- HOME --- */
   .presentacion-section {
     margin: -35px 25px 10px 25px; }
   .principal-section {
     margin: 0px 0px; }
-  .image-principal {
-    width: 200vw;
-    left: -50vw; }
+    .principal-section .image-principal {
+      width: 200vw;
+      left: -50vw; }
   /* --- ABOUT --- */
-  .image-aside {
-    text-align: center;
-    width: 100vw; }
   /* --- PORTFOLIO --- */
-  .contentBlock {
+  .contentBox .content-image-grid {
     display: block; }
-  .imgPortfolio {
-    max-width: 90vw;
-    margin: 5px; }
   /* --- CONTACTO --- */
-  .form-section {
+  .contentBox .form-section {
     display: grid;
     margin: 20px 30px;
     align-content: center;
@@ -43,6 +37,20 @@
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
 /* Pantallas con un ancho minimo de 427 px y un maximo de 1023 px */
 @media only screen and (min-width: 427px) and (max-width: 1023px) {
+  /* --- IMPORT --- */
+  /* --- ANIMACIONES --- */
+  .text-grayscale {
+    background-color: #cececeb5;
+    transition: background-color 3s; }
+  .principal-section:hover ~ .text-grayscale {
+    color: white;
+    background-color: #022e60; }
+  .img-grayscale {
+    filter: grayscale(1); }
+  .img-grayscale_transform {
+    transition: filter 2s; }
+  .img-grayscale_transform:hover {
+    filter: grayscale(0); }
   /* --- GENERAL --- */
   header {
     padding-top: 3vh; }
@@ -51,34 +59,48 @@
   .h3, h3 {
     font-size: calc(0.9rem + .6vw); }
   /* --- PAGINAS DE CONTENIDO --- */
-  .pageHeader {
+  .contentBox .pageHeader {
     background-position: -145px 0px; }
   /* --- HOME --- */
   .presentacion-section {
     margin: -50px 10vh 10vh 10vh; }
-  .image-principal {
+  .principal-section .image-principal {
     width: 100vw; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO --- */
-  .contentBlock {
+  .contentBox .content-image-grid {
     grid-template-columns: 45vw 45vw;
     grid-template-rows: auto; }
-  .div1 {
-    grid-area: 1 / 1 / 2 / 2; }
-  .div2 {
-    grid-area: 1 / 2 / 2 / 3; }
-  .div3 {
-    grid-area: 2 / 1 / 2 / 3; }
-  .div4 {
-    grid-area: 4 / 1 / 4 / 3; }
-  .div9 {
-    grid-area: 5 / 1 / 5 / 3; }
-  .div5, .div6, .div7, .div8 {
-    display: none; } }
+    .contentBox .content-image-grid .div1 {
+      grid-area: 1 / 1 / 2 / 2; }
+    .contentBox .content-image-grid .div2 {
+      grid-area: 1 / 2 / 2 / 3; }
+    .contentBox .content-image-grid .div3 {
+      grid-area: 2 / 1 / 2 / 3; }
+    .contentBox .content-image-grid .div4 {
+      grid-area: 4 / 1 / 4 / 3; }
+    .contentBox .content-image-grid .div9 {
+      grid-area: 5 / 1 / 5 / 3; }
+    .contentBox .content-image-grid .div5, .contentBox .content-image-grid .div6, .contentBox .content-image-grid .div7, .contentBox .content-image-grid .div8 {
+      display: none; } }
 
 /* --- ADAPTACION A OTRAS PANTALLAS --- */
 /* Pantallas con un ancho minimo de 1024 px */
 @media only screen and (min-width: 1024px) {
+  /* --- IMPORT --- */
+  /* --- ANIMACIONES --- */
+  .text-grayscale {
+    background-color: #cececeb5;
+    transition: background-color 3s; }
+  .principal-section:hover ~ .text-grayscale {
+    color: white;
+    background-color: #022e60; }
+  .img-grayscale {
+    filter: grayscale(1); }
+  .img-grayscale_transform {
+    transition: filter 2s; }
+  .img-grayscale_transform:hover {
+    filter: grayscale(0); }
   /* --- GENERAL --- */
   header {
     padding-top: 5vh; }
@@ -87,49 +109,50 @@
   .h3, h3 {
     font-size: 1.25rem; }
   /* Menu */
-  .navbar-expand-lg .navbar-collapse {
+  body .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
     justify-content: center; }
   /* --- PAGINAS DE CONTENIDO ---*/
-  .pageHeader {
+  .contentBox .pageHeader {
     background-position: 0px 0px; }
   /* --- HOME --- */
   .presentacion-section {
     margin: -80px 20vh 10vh 20vh; }
-  .image-principal {
+  .principal-section .image-principal {
     width: 85vw; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO ---- */
-  .content-image-grid {
+  .contentBox .content-image-grid {
     grid-template-columns: 25vw 25vw 25vw; }
-  .div1 {
-    grid-area: 1 / 1 / 3 / 3; }
-  .div2 {
-    grid-column: 3;
-    grid-row: 1/2; }
-  .div3 {
-    grid-area: 2 / 3 / 3 / 3; }
-  .div4 {
-    grid-column: 2/4;
-    grid-row: 4/6; }
-  .div5 {
-    grid-column: 1/1;
-    grid-row: 4/4; }
-  .div6 {
-    grid-column: 1;
-    grid-row: 5/6; }
-  .div7 {
-    grid-area: 3 / 2 / 3 / 1; }
-  .div8 {
-    grid-area: 3 / 2 / 3 / 3; }
-  .div9 {
-    grid-area: 3 / 3 / 3 / 3; }
+    .contentBox .content-image-grid .div1 {
+      grid-area: 1 / 1 / 3 / 3; }
+    .contentBox .content-image-grid .div2 {
+      grid-column: 3;
+      grid-row: 1/2; }
+    .contentBox .content-image-grid .div3 {
+      grid-area: 2 / 3 / 3 / 3; }
+    .contentBox .content-image-grid .div4 {
+      grid-column: 2/4;
+      grid-row: 4/6; }
+    .contentBox .content-image-grid .div5 {
+      grid-column: 1/1;
+      grid-row: 4/4; }
+    .contentBox .content-image-grid .div6 {
+      grid-column: 1;
+      grid-row: 5/6; }
+    .contentBox .content-image-grid .div7 {
+      grid-area: 3 / 2 / 3 / 1; }
+    .contentBox .content-image-grid .div8 {
+      grid-area: 3 / 2 / 3 / 3; }
+    .contentBox .content-image-grid .div9 {
+      grid-area: 3 / 3 / 3 / 3; }
   /*CONTACTO*/
-  .form-section {
+  .contentBox .form-section {
     display: grid;
     padding: 3vh; } }
 
+/* --- ESTILO --- */
 body {
   width: 100%;
   min-height: 100vh;
@@ -191,130 +214,20 @@ label {
   color: white;
   background-color: #022e60;
   border-color: #022e60; }
-
-.btn-principal:hover {
-  color: white;
-  background-color: #4D72A5;
-  border-color: #4D72A5; }
+  .btn-principal:hover {
+    color: white;
+    background-color: #4D72A5;
+    border-color: #4D72A5; }
 
 .btn-secundario {
   color: #022e60;
   background-color: #F5E253;
   border-color: #F5E253; }
+  .btn-secundario:hover {
+    background-color: #FFF0AD;
+    border-color: #FFF0AD; }
 
-.btn-secundario:hover {
-  background-color: #FFF0AD;
-  border-color: #FFF0AD; }
-
-/*MENU*/
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-  color: white;
-  background-color: black; }
-
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: #ffffffcc !important;
-  position: sticky;
-  top: 0px;
-  z-index: 100; }
-
-/*PIE DE PAGINA*/
-.footer-section {
-  color: white;
-  background-color: black;
-  margin: 50px 0px 0px 0px;
-  padding: 25px; }
-
-.social-media {
-  text-align: center;
-  padding-bottom: 5px; }
-
-.social-media-icon {
-  width: 18px;
-  height: 18px; }
-
-.footText {
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  text-justify: inter-word; }
-
-/*PAGINAS DE CONTENIDO*/
-.contentBox {
-  width: calc(75vw + 24px);
-  margin: auto; }
-
-/*DIRECCION DE PAGINA*/
-.pageHeader {
-  height: 300px;
-  margin: auto auto 12px auto;
-  font-size: 30px;
-  text-align: center;
-  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-origin: content-box; }
-
-.breadcrumb {
-  background: rgba(0, 0, 0, 0.36);
-  /* Old Browsers */
-  background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0, 0, 0, 0.36)), color-stop(0%, rgba(36, 36, 36, 0.36)), color-stop(38%, rgba(255, 255, 255, 0.22)), color-stop(100%, rgba(255, 255, 255, 0)));
-  /* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
-  /* IE 10+ */
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1rem;
-  list-style: none;
-  align-content: flex-end;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 100%; }
-
-.breadcrumb-item.active {
-  color: white; }
-
-.bottom-left-margin {
-  margin: 0px 0px 20px 20px; }
-
-.principal-section {
-  display: block;
-  margin: 0px 6vw;
-  overflow: hidden; }
-
-.general-section {
-  display: block;
-  margin: 30px; }
-
-/* --- ANIMACIONES --- */
-.text-grayscale {
-  background-color: #cececeb5;
-  transition: background-color 3s; }
-
-.principal-section:hover ~ .text-grayscale {
-  color: white;
-  background-color: #022e60; }
-
-.img-grayscale, .img-grayscale_transform {
-  filter: grayscale(1); }
-
-.img-grayscale_transform {
-  transition: filter 2s; }
-
-.img-grayscale_transform:hover {
-  filter: grayscale(0); }
-
-/* --- HOME --- */
+/*LEYENDAS*/
 .text-cita, .text-cita_big, .text-cita_hiper {
   font-family: "Gochi Hand", cursive;
   z-index: 1; }
@@ -334,29 +247,102 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   font-size: 22px;
   padding: 15px 0px 10px 0px; }
 
-/* --- PORTFOLIO ---- */
-.content-image-grid {
-  display: grid;
-  grid-template-rows: auto;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  grid-template-rows: auto;
-  grid-gap: 12px; }
+/*MENU*/
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: white;
+  background-color: black; }
 
-.modal-header {
-  flex-direction: column;
-  border-bottom: 1px solid #92E3E8; }
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #ffffffcc !important;
+  position: sticky;
+  top: 0px;
+  z-index: 100; }
 
-.modal-footer {
-  border-top: 1px solid #92E3E8; }
+/*PIE DE PAGINA*/
+.footer-section {
+  color: white;
+  background-color: black;
+  margin: 50px 0px 0px 0px;
+  padding: 25px; }
+  .footer-section .social-media {
+    text-align: center;
+    padding-bottom: 5px; }
+    .footer-section .social-media .social-media-icon {
+      width: 18px;
+      height: 18px; }
+  .footer-section .footText {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    text-justify: inter-word; }
 
-/* --- CONTACTO --- */
-.resize-none {
-  resize: none; }
+/*PAGINAS DE CONTENIDO*/
+.contentBox {
+  width: calc(75vw + 24px);
+  margin: auto;
+  /*DIRECCION DE PAGINA*/
+  /* --- PORTFOLIO ---- */
+  /* --- CONTACTO --- */ }
+  .contentBox .pageHeader {
+    height: 300px;
+    margin: auto auto 12px auto;
+    font-size: 30px;
+    text-align: center;
+    background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box; }
+    .contentBox .pageHeader .breadcrumb {
+      background: rgba(0, 0, 0, 0.36);
+      /* Old Browsers */
+      background: -moz-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0, 0, 0, 0.36)), color-stop(0%, rgba(36, 36, 36, 0.36)), color-stop(38%, rgba(255, 255, 255, 0.22)), color-stop(100%, rgba(255, 255, 255, 0)));
+      /* Chrome, Safari4+ */
+      background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
+      /* IE 10+ */
+      background: linear-gradient(45deg, rgba(0, 0, 0, 0.36) 0%, rgba(36, 36, 36, 0.36) 0%, rgba(255, 255, 255, 0.22) 38%, rgba(255, 255, 255, 0) 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 1rem;
+      list-style: none;
+      align-content: flex-end;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 100%; }
+      .contentBox .pageHeader .breadcrumb .breadcrumb-item.active {
+        color: white; }
+      .contentBox .pageHeader .breadcrumb .bottom-left-margin {
+        margin: 0px 0px 20px 20px; }
+  .contentBox .content-image-grid {
+    display: grid;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-gap: 12px; }
+  .contentBox .modal .modal-dialog .modal-content .modal-header {
+    flex-direction: column;
+    border-bottom: 1px solid #92E3E8; }
+  .contentBox .modal .modal-dialog .modal-content .modal-footer {
+    border-top: 1px solid #92E3E8; }
+  .contentBox form-section div .resize-none {
+    resize: none; }
+  .contentBox form-section div .form-control {
+    border: 2px solid #54b4bf; }
 
-.form-control {
-  border: 2px solid #54b4bf; }
-
-/* --- 404 --- */
+/* --- HOME --- */
+.principal-section {
+  display: block;
+  margin: 0px 6vw;
+  overflow: hidden; }

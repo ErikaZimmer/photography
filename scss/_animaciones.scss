@@ -1,0 +1,21 @@
+/* --- ANIMACIONES --- */
+
+.text-grayscale{
+  background-color: $colorNeutroSecundarioTransparency;
+  transition: background-color 3s;
+}
+
+.principal-section:hover ~ .text-grayscale{
+  color: $colorNeutroPrincipal;
+  background-color: $colorPrincipal;
+}
+
+.img-grayscale{
+  filter: grayscale(1);
+}
+
+.img-grayscale_transform{
+  transition: filter 2s;
+}
+
+.img-grayscale_transform:hover{filter: grayscale(0);}

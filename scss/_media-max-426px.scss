@@ -1,0 +1,43 @@
+/* --- ADAPTACION A OTRAS PANTALLAS --- */
+
+/* Pantallas con un ancho maximo de 426 px */
+
+@media only screen and (max-width:426px) {
+
+  /* --- GENERAL --- */
+  header{padding-top: 3vh;}
+
+  .h3, h3 {font-size: calc(0.8rem + .6vw);}
+
+  /* --- PAGINAS DE CONTENIDO --- */
+
+  .contentBox .pageHeader {background-position: -200px 0px;}
+
+  /* --- HOME --- */
+  
+  .presentacion-section {margin: -35px 25px 10px 25px;}
+
+  .principal-section{margin: 0px 0px;
+   .image-principal{
+      width: 200vw;
+      left: -50vw;
+    }
+  }
+
+  /* --- ABOUT --- */
+
+  /* --- PORTFOLIO --- */
+
+  .contentBox .content-image-grid {display: block;}
+
+  /* --- CONTACTO --- */
+
+  .contentBox .form-section {
+    display: grid;
+    margin: 20px 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+  }
+}

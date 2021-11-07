@@ -2,12 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Homemade+Apple&display=swap');
 
 /* --- IMPORT --- */ 
-@import "__variables.scss";
-@import "__media-max-426px.scss";
-@import "__media-min-427px.scss";
-@import "__media-min-1024px.scss";
+@import "variables", "media-max-426px", "media-min-427px", "media-min-1024px";
 
-
+/* --- ESTILO --- */
 
 body{ 
   width: 100%; 
@@ -46,9 +43,7 @@ label{
 
 /*Imagenes*/
 
-.image-class{
-  width: 100%;
-}
+.image-class{width: 100%;}
 
 .image-class_normal{
   @extend .image-class;
@@ -78,129 +73,25 @@ label{
   color: $colorNeutroPrincipal;
   background-color: $colorPrincipal;
   border-color: $colorPrincipal;
-}
-
-.btn-principal:hover {
-  color: $colorNeutroPrincipal;
-  background-color: $colorPrincipalHover;
-  border-color: $colorPrincipalHover;
+  &:hover {
+    color: $colorNeutroPrincipal;
+    background-color: $colorPrincipalHover;
+    border-color: $colorPrincipalHover;
+  }
 }
 
 .btn-secundario {
   color: $colorPrincipal;
   background-color: $colorSecundario;
   border-color: $colorSecundario;
-}
-
-.btn-secundario:hover {
+  &:hover {
   background-color: $colorSecundarioHover;
   border-color: $colorSecundarioHover;
+  }
 }
 
-/*MENU*/                                                      
-.navbar-light:hover .navbar-nav:hover  .nav-link:hover  {
-  color: $colorNeutroPrincipal;
-  background-color: $colorNeutroSecundario;
-}
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-  background-color: $colorNeutroPrincipalTransparency!important;      
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-}
-
-/*PIE DE PAGINA*/
-
-.footer-section{
-  color: $colorNeutroPrincipal;
-  background-color: $colorNeutroSecundario;
-  margin: 50px 0px 0px 0px;
-  padding: 25px;
-}
-
-.social-media{text-align: center; padding-bottom:5px;}
-.social-media-icon{width: 18px; height: 18px;}
-.footText{font-size: 12px; text-transform: uppercase; text-align: center; text-justify:inter-word;} 
-
-/*PAGINAS DE CONTENIDO*/
-
-.contentBox{
-  width: calc(75vw + 24px);
-  margin: auto;
-}
-
-/*DIRECCION DE PAGINA*/
-.pageHeader{
-  height: 300px;
-  margin: auto auto 12px auto;
-  font-size: 30px;
-  text-align: center;
-  background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-}
-
-.breadcrumb {
-  background: rgba(0,0,0,0.36);/* Old Browsers */
-  background: -moz-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.36)), color-stop(0%, rgba(36,36,36,0.36)), color-stop(38%, rgba(255,255,255,0.22)), color-stop(100%, rgba(255,255,255,0)));/* Chrome, Safari4+ */
-  background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* IE 10+ */
-  background: linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%);/* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 1rem;
-  list-style: none;
-  align-content: flex-end;
-  align-items: flex-end;
-  flex-direction: row;
-  justify-content: flex-start;
-  height: 100%;
-}
-
-.breadcrumb-item.active {color: $colorNeutroPrincipal;}
-
-.bottom-left-margin{margin: 0px 0px 20px 20px;}
-
-.principal-section{
-  display: block;
-  margin: 0px 6vw;
-  overflow: hidden;
-}
-
-.general-section{
-  display: block;
-  margin: 30px;
-}
-
-/* --- ANIMACIONES --- */
-
-.text-grayscale{
-  background-color: $colorNeutroSecundarioTransparency;
-  transition: background-color 3s;
-}
-
-.principal-section:hover ~ .text-grayscale{
-  color: $colorNeutroPrincipal;
-  background-color: $colorPrincipal;
-}
-
-.img-grayscale{
-  filter: grayscale(1);
-}
-
-.img-grayscale_transform{
-  @extend .img-grayscale;
-  transition: filter 2s;
-}
-
-.img-grayscale_transform:hover{filter: grayscale(0);}
-
-/* --- HOME --- */
+/*LEYENDAS*/
 
 .text-cita{
   font-family: $fontFamilyResalte;
@@ -229,33 +120,119 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   padding: 15px 0px 10px 0px;
 }
 
-/* --- PORTFOLIO ---- */
-
-.content-image-grid {
-  display: grid;
-  grid-template-rows: auto;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  grid-template-rows: auto;
-  grid-gap: 12px;
-}
-.modal-header {
-  flex-direction: column;
-  border-bottom: 1px solid $colorAntagonico;
+/*MENU*/                                                      
+.navbar-light:hover .navbar-nav:hover  .nav-link:hover  {
+  color: $colorNeutroPrincipal;
+  background-color: $colorNeutroSecundario;
 }
 
-.modal-footer {
-    border-top: 1px solid $colorAntagonico;
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: $colorNeutroPrincipalTransparency!important;      
+  position: sticky;
+  top: 0px;
+  z-index: 100;
 }
 
-/* --- CONTACTO --- */
+/*PIE DE PAGINA*/
 
-.resize-none{resize:none;}
+.footer-section{
+  color: $colorNeutroPrincipal;
+  background-color: $colorNeutroSecundario;
+  margin: 50px 0px 0px 0px;
+  padding: 25px;
 
-.form-control{border: 2px solid $colorAntagonicoStrong;}
+  .social-media{
+    text-align: center; padding-bottom:5px;
+    .social-media-icon{width: 18px; height: 18px;}
+  }
+  .footText{font-size: 12px; text-transform: uppercase; text-align: center; text-justify:inter-word;} 
+}
 
-/* --- 404 --- */
+/*PAGINAS DE CONTENIDO*/
+
+.contentBox{
+  width: calc(75vw + 24px);
+  margin: auto;
+
+  /*DIRECCION DE PAGINA*/
+  .pageHeader{
+    height: 300px;
+    margin: auto auto 12px auto;
+    font-size: 30px;
+    text-align: center;
+    background-image: url(https://github.com/ErikaZimmer/photographyPage/blob/main/img/portfolio/Italia-Roma-006.webp?raw=true);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+  
+    .breadcrumb {
+      background: rgba(0,0,0,0.36);/* Old Browsers */
+      background: -moz-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.36)), color-stop(0%, rgba(36,36,36,0.36)), color-stop(38%, rgba(255,255,255,0.22)), color-stop(100%, rgba(255,255,255,0)));/* Chrome, Safari4+ */
+      background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%); /* IE 10+ */
+      background: linear-gradient(45deg, rgba(0,0,0,0.36) 0%, rgba(36,36,36,0.36) 0%, rgba(255,255,255,0.22) 38%, rgba(255,255,255,0) 100%);/* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 1rem;
+      list-style: none;
+      align-content: flex-end;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 100%;
+    
+      .breadcrumb-item.active {color: $colorNeutroPrincipal;}
+
+      .bottom-left-margin{margin: 0px 0px 20px 20px;}
+    }
+  }
+
+  /* --- PORTFOLIO ---- */
+
+  .content-image-grid {
+    display: grid;
+    grid-template-rows: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+  }
+  .modal .modal-dialog .modal-content {
+
+    .modal-header {
+      flex-direction: column;
+      border-bottom: 1px solid $colorAntagonico;
+    }
+
+    .modal-footer {border-top: 1px solid $colorAntagonico;}
+
+  }
+
+  /* --- CONTACTO --- */
+
+  form-section div{
+    .resize-none{resize:none;}
+
+    .form-control{border: 2px solid $colorAntagonicoStrong;}
+  }
+}
+
+/* --- HOME --- */
+
+.principal-section{
+  display: block;
+  margin: 0px 6vw;
+  overflow: hidden;
+}
+
+
+
+
+
 
 
