@@ -1,0 +1,24 @@
+En los archivos _media-max-426px.scss y _media-min-427px.scss, correspondiente, me falto agregar el siguiente codigo: 
+
+En ambos:
+.principal-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+Solo en _media-min-427px.scss:
+
+.principal-section .image-principal {
+    width: 100%;
+}    
+.text-grayscale {
+    background-color:$colorPrincipal;
+}
+
+Hace unos dias lo vi pero como no me parecio correcto modificarlo en lo que subi hasta la fecha de entrega, preferi dejarlo aca como un apartado como detalle aparte. 
+
+Saludos!
+
