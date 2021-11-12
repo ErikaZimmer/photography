@@ -18,6 +18,13 @@ Solo en _media-min-427px.scss:
     background-color:$colorPrincipal;
 }
 
+
+Mientras que en el archivo general faltaria esta modificacion:
+
+.modal-header {
+    flex-direction: column;
+}
+
 Hace unos dias lo vi pero como no me parecio correcto modificarlo en lo que subi hasta la fecha de entrega, preferi dejarlo aca como un apartado como detalle aparte. 
 
 Saludos!
