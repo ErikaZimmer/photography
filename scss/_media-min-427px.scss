@@ -26,7 +26,16 @@
 
   .presentacion-section {margin: -50px 10vh 10vh 10vh;}
 
-  .principal-section .image-principal{width: 100vw;}
+  .principal-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .image-principal{width: 100%;}
+  }
+  
+  .text-grayscale {background-color:$colorPrincipal;}
 
   /* --- ABOUT --- */
 
