@@ -17,7 +17,14 @@
   
   .presentacion-section {margin: -35px 25px 10px 25px;}
 
-  .principal-section{margin: 0px 0px;
+  .principal-section{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    
    .image-principal{
       width: 200vw;
       left: -50vw;
