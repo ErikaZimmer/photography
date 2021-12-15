@@ -15,16 +15,11 @@
     background-position: -200px 0px; }
   /* --- HOME --- */
   .presentacion-section {
-    margin: -35px 25px 10px 25px; }
+    margin: 0px 20px 0px 20px; }
   .principal-section {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     margin: 0px 0px; }
     .principal-section .image-principal {
-      width: 200vw;
+      width: 100%;
       left: -50vw; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO --- */
@@ -69,20 +64,14 @@
   /* --- HOME --- */
   .presentacion-section {
     margin: -50px 10vh 10vh 10vh; }
-  .principal-section {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center; }
-    .principal-section .image-principal {
-      width: 100%; }
+  .principal-section .image-principal {
+    width: 100%; }
   .text-grayscale {
-    background-color: #022e60; }
+    background-color: #cececeb5; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO --- */
   .contentBox .content-image-grid {
-    grid-template-columns: 45vw 45vw;
+    grid-template-columns: calc((75vw + 12px)/2) calc((75vw + 12px)/2);
     grid-template-rows: auto; }
     .contentBox .content-image-grid .div1 {
       grid-area: 1 / 1 / 2 / 2; }
@@ -134,6 +123,8 @@
     margin: -80px 20vh 10vh 20vh; }
   .principal-section .image-principal {
     width: 85vw; }
+  .text-grayscale {
+    background-color: #cececeb5; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO ---- */
   .contentBox .content-image-grid {
@@ -356,6 +347,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 /* --- HOME --- */
 .principal-section {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   margin: 0px 6vw;
   overflow: hidden; }

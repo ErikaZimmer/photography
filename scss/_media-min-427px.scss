@@ -26,16 +26,9 @@
 
   .presentacion-section {margin: -50px 10vh 10vh 10vh;}
 
-  .principal-section {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    .image-principal{width: 100%;}
-  }
-  
-  .text-grayscale {background-color:$colorPrincipal;}
+  .principal-section .image-principal{width: 100%;}
+
+  .text-grayscale {background-color:$colorNeutroSecundarioTransparency;}
 
   /* --- ABOUT --- */
 
@@ -43,7 +36,7 @@
   /* --- PORTFOLIO --- */
 
   .contentBox .content-image-grid{
-    grid-template-columns: 45vw 45vw;
+    grid-template-columns: calc((75vw + 12px)/2) calc((75vw + 12px)/2);
     grid-template-rows: auto;
 
     .div1 { grid-area: 1 / 1 / 2 / 2; }

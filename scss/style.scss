@@ -225,7 +225,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 /* --- HOME --- */
 
 .principal-section{
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   margin: 0px 6vw;
   overflow: hidden;
 }
