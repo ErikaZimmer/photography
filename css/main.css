@@ -17,6 +17,11 @@
   .presentacion-section {
     margin: -35px 25px 10px 25px; }
   .principal-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     margin: 0px 0px; }
     .principal-section .image-principal {
       width: 200vw;
@@ -64,8 +69,16 @@
   /* --- HOME --- */
   .presentacion-section {
     margin: -50px 10vh 10vh 10vh; }
-  .principal-section .image-principal {
-    width: 100vw; }
+  .principal-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+    .principal-section .image-principal {
+      width: 100%; }
+  .text-grayscale {
+    background-color: #022e60; }
   /* --- ABOUT --- */
   /* --- PORTFOLIO --- */
   .contentBox .content-image-grid {
