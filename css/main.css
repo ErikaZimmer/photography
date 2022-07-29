@@ -336,7 +336,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     grid-template-rows: auto;
     grid-gap: 12px; }
   .contentBox .modal .modal-dialog .modal-content .modal-header {
-    flex-direction: column;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid #dee2e6;
+      border-top-left-radius: calc(0.3rem - 1px);
+      border-top-right-radius: calc(0.3rem - 1px);
+      flex-direction: column;
+      border-bottom: 1px solid $colorAntagonico;
+    }
     border-bottom: 1px solid #92E3E8; }
   .contentBox .modal .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid #92E3E8; }
